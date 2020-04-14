@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global</name>
+    <events>
+        <variable constant="0" name="LOAD" sid="127368773857899" static="0" type="number">0</variable>
+        <variable constant="0" name="Scroll2" sid="617531711628427" static="0" type="number">100</variable>
+        <variable comment="Valor movimiento" constant="0" name="Scroll" sid="843839706348056" static="0" type="number">-100</variable>
+        <variable constant="0" name="MovimientoPersonaje" sid="176454540182008" static="0" type="number">-50</variable>
+        <event-block sid="998611160909838">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="816036810377374" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="112263610036471" type="System">
+                    <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="226043584660125" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="554423730006517" type="PantallaDeCarga">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="875457065462108" type="System">
+                    <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="279683542110438" type="Audio">
+                    <param id="0" name="Audio file">The Legend of Zelda ~ Oracle of Seasons Music   Skull Pirate</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="453165054004123">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="880846617035616" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="852377088487015" type="CorazonVida">
+                    <param id="0" name="X">ViewportRight(0) - 16</param>
+                    <param id="1" name="Y">ViewportTop(0) +16</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="976058399714459">
+            <conditions>
+                <condition id="-29" name="On load complete" sid="779195192766012" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="277813685636018" type="PantallaDeCarga">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-12" name="Set group active" sid="790823936861440" type="System">
+                    <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="682743456373951" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="967351780672563" type="PantallaDeCarga">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="949881829062876" type="System">
+                    <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="991689185271291" type="Audio">
+                    <param id="0" name="Audio file">The Legend of Zelda ~ Oracle of Seasons Music   Skull Pirate</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="705267328858313">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="525975696207104" type="Princesa">
+                    <param id="0" name="Object">ColisionLeftRight</param>
+                </condition>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="703420366008663" type="Princesa" />
+                <condition id="-1" name="Compare X" sid="522803113495024" type="ColisionLeftRight">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">ViewportRight(0)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="229593433646671" type="System">
+                    <param id="0" name="Group name">&quot;Scroll movement(Left-Right)&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="516756869476941" type="System">
+                    <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="448339637494698">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="320972894369421" type="Princesa">
+                    <param id="0" name="Object">ColisionRightLeft</param>
+                </condition>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="636508124014268" type="Princesa" />
+                <condition id="-1" name="Compare X" sid="171286220052581" type="ColisionRightLeft">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">ViewportLeft(0)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="424898840729085" type="System">
+                    <param id="0" name="Group name">&quot;Scroll movement(Right-Left)&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="200226813049019" type="System">
+                    <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="547227732035364" title="Scroll movement(Left-Right)">
+            <sub-events>
+                <event-block sid="472999212135229">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="574893341781288" type="System">
+                            <param id="0" name="Interval (seconds)">0.001</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Scroll to X" sid="794463221389480" type="System">
+                            <param id="0" name="X">ColisionLeftRight.X+Scroll</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="806754188669364" type="System">
+                            <param id="0" name="Variable">Scroll</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="626929707742095" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="504979902341333">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="805331628311289" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">40</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="386258991952848" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="302276644838511" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">150</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="172390647932125" type="Princesa">
+                            <param id="0" name="Distance">2</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="729613683121274" type="BlockAgua">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="956033337229184">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="751948848847589" type="System">
+                            <param id="0" name="Variable">Scroll</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="558620094279268" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="147974743190215" type="System">
+                            <param id="0" name="Variable">Scroll</param>
+                            <param id="1" name="Value">-100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="277091555822192" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Value">-50</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="296870109259963" type="Princesa">
+                            <param id="0" name="X">Princesa.X</param>
+                            <param id="1" name="Y">Princesa.Y</param>
+                        </action>
+                        <action id="2" name="Stop" sid="264164122871436" type="Princesa" />
+                        <action id="-12" name="Set group active" sid="997272335714283" type="System">
+                            <param id="0" name="Group name">&quot;Scroll movement(Left-Right)&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="507659644880457" type="BlockAgua">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="329129154363991" title="Scroll movement(Right-Left)">
+            <sub-events>
+                <event-block sid="376442941433728">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="677247302682437" type="System">
+                            <param id="0" name="Interval (seconds)">0.001</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Scroll to X" sid="127512799881943" type="System">
+                            <param id="0" name="X">ColisionRightLeft.X+Scroll2</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="970411356553392" type="System">
+                            <param id="0" name="Variable">Scroll2</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="101993478875003" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="768586590535182">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="798737878818274" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">40</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="562018022313545" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="775447026757516" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">150</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="678737226512653" type="Princesa">
+                            <param id="0" name="Distance">-2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="133479503280854">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="217898898864283" type="System">
+                            <param id="0" name="Variable">Scroll2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">-120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="971181906755346" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="430279516847210" type="System">
+                            <param id="0" name="Variable">Scroll2</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="829529805910375" type="System">
+                            <param id="0" name="Variable">MovimientoPersonaje</param>
+                            <param id="1" name="Value">-50</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="514988802892011" type="Princesa">
+                            <param id="0" name="X">Princesa.X</param>
+                            <param id="1" name="Y">Princesa.Y</param>
+                        </action>
+                        <action id="2" name="Stop" sid="197784706707029" type="Princesa" />
+                        <action id="-12" name="Set group active" sid="536384777304336" type="System">
+                            <param id="0" name="Group name">&quot;Scroll movement(Right-Left)&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

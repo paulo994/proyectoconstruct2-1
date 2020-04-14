@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu(Eventos)</name>
+    <events>
+        <variable comment="0=invisible 1=up 2=down" constant="0" name="Opcion" sid="338598332861336" static="0" type="number">0</variable>
+        <event-block sid="483667002793345">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="760082768216912" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="534755225244933" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="783614410878308" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Play" sid="419715364629291" type="Audio">
+                    <param id="0" name="Audio file">Sound Effect (2)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="954101761880651" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="750124010269268" type="Contorno">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="982898086471363">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="635404124240385" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="408485925267271" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="724112479740057" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Play" sid="529377638240054" type="Audio">
+                    <param id="0" name="Audio file">Sound Effect (2)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="859535621503966" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="757260961430060" type="Contorno">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="789225254669922">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="663068077768119" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="389254065991332" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="126116277547712" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Play" sid="946778421266247" type="Audio">
+                    <param id="0" name="Audio file">Sound Effect (2)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="800857376764956" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-3" name="Set position" sid="925106343124695" type="Contorno">
+                    <param id="0" name="X">104</param>
+                    <param id="1" name="Y">154</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="505609604347645">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="462389429474096" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="610086694839927" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="311980226899242" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Play" sid="102559997498458" type="Audio">
+                    <param id="0" name="Audio file">Sound Effect (2)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="142794713985018" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-3" name="Set position" sid="861954260688244" type="Contorno">
+                    <param id="0" name="X">104</param>
+                    <param id="1" name="Y">154</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="161372695027512">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="938860923038777" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="369005605526940" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="460968654454586" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Play" sid="627355304371704" type="Audio">
+                    <param id="0" name="Audio file">Sound Effect (2)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="272032457015754" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="582566150971172" type="Contorno">
+                    <param id="0" name="X">104</param>
+                    <param id="1" name="Y">124</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="532424057238754">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="324770790007876" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="209791690728376" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="145306013974274" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Play" sid="502552356023081" type="Audio">
+                    <param id="0" name="Audio file">Sound Effect (2)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="448139519429605" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="155858399037211" type="Contorno">
+                    <param id="0" name="X">104</param>
+                    <param id="1" name="Y">124</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="355868714746586">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="646077432125682">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="459511601822495" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="130075754296390" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="887907869655185" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="123305311683405">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="183730634745402" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="399897573475929" type="System">
+                    <param id="0" name="Variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-37" name="Load" sid="366483838398198" type="System">
+                    <param id="0" name="Slot">&quot;Save 1&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="602725003388469" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

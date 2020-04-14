@@ -1,0 +1,1251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="LargoTexto" sid="575956987597843" static="0" type="number">0</variable>
+        <variable constant="0" name="Dialogo" sid="547644710187159" static="0" type="number">0</variable>
+        <variable constant="0" name="Message" sid="653412538185508" static="0" type="number">0</variable>
+        <include>Global</include>
+        <event-block sid="713314800070130">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="721169255892138" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="318245322324106" type="DialogBox">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="703615949036487" title="Player Control">
+            <sub-events>
+                <event-block sid="652475334178733">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="295285670018433" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="625472632580659" type="Princesa">
+                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="677000953777201" type="Princesa">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="728795200688518">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="107761952707677" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="662093267683604" type="Princesa" />
+                        <action id="2" name="Stop" sid="860656005799888" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block sid="562773037610913">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="828517404801626" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="404655470096473" type="Princesa">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="251513365466245" type="Princesa">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="662291566429180">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="691834632535212" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="527927917840232" type="Princesa" />
+                        <action id="2" name="Stop" sid="995814096306252" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block sid="991103413616147">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="208492281101464" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="702489005307938" type="Princesa">
+                            <param id="0" name="Animation">&quot;Up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="480000285198373" type="Princesa">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="782486961757004">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="409804295729564" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="878358687784122" type="Princesa" />
+                        <action id="2" name="Stop" sid="839391175844198" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block sid="734978022714375">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="553642673249952" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="780760761068709" type="Princesa">
+                            <param id="0" name="Animation">&quot;Down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="696005573702729" type="Princesa">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="246926966242298">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="841235234271577" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="647750778783456" type="Princesa" />
+                        <action id="2" name="Stop" sid="587374309011369" type="Princesa" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="781567420892126" title="Dialogos Zona 1">
+            <sub-events>
+                <event-block sid="812158603212524">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="611321382851589" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="456092419548782" type="Princesa">
+                            <param id="0" name="Object">DialoguePointHombreSediento</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="709159757793619" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="677913525364140" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="280506683766265" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="785193154641587" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="254714494762635" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="896451211081767" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="770492020706858" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="304980446431963" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block sid="587328164816286">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="159664380625922" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="575042459067602" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="151602783357472" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="745857167064294" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="770157807857147" type="IdiomaDialogo">
+                            <param id="0" name="Text">left(&quot;AGUA&quot;,len(IdiomaDialogo.text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="573882650920618">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="109675434140688" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="308034365556870" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="983562656967682" type="System">
+                            <param id="0" name="First value">&quot;AGUA&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">IdiomaDialogo.Text</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="351425092775945" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="844931400290989" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="998639067499334" type="IdiomaDialogo">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="224261880270959" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="185815560070756" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="236035610120940" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="413393657762374" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="332136615963788" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="579202871219548">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="415351314587291" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="910621282332573" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="794554927951726" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="897970326666304" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set font size" sid="905413582610195" type="Destino">
+                            <param id="0" name="Size (pt)">8</param>
+                        </action>
+                        <action id="0" name="Set text" sid="570777197833366" type="Destino">
+                            <param id="0" name="Text">left(&quot;Has obtenido botella&quot;,len(Destino.Text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="554215958906055">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="161280430838082" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="266837235764359" type="System">
+                            <param id="0" name="First value">len(&quot;Has obtenido botella&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">len(Destino.Text)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="488943189068994" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="364277132156913" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="486171064039671" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="104953817272964" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="327178942091500" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="566596760547369" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="881325013086848" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="816556705193715" type="Destino">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="494367019154611" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="476289020379952" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="997625655754964">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="727710744510500">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="110778309498934" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="561308876565747" type="Princesa">
+                            <param id="0" name="Object">DialoguePointHombreSediento</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="653543659537258" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="295220451806704" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="593971543902295" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="522758464041838" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="416782695150048" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="444119841431425" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="337022070721640" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="550181440946790" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="532973726296390" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="615162386673160" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block sid="369208805822407">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="684352632239923" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="256167895074469" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="218455361449228" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="697447992990318" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="278098284705791" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="297373162889144" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="986981311746321" type="IdiomaDialogo">
+                            <param id="0" name="Text">left(&quot;AGUA&quot;,len(IdiomaDialogo.text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="659748521098356">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="364150878620070" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="176156156291422" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="547396597025870" type="System">
+                            <param id="0" name="First value">&quot;AGUA&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">IdiomaDialogo.Text</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="611214371434775" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="706694550494160" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="518186382351814" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="600535152937983" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="642693018078362" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="542621399529742" type="IdiomaDialogo">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="873038105211989" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="424258491248783" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="290961999606459" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="313191106370690" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="159533883925560">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="409811917532088">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="688206481103279" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="755774806569186" type="Princesa">
+                            <param id="0" name="Object">DialoguePointHombreSediento</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="972313218319650" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="378226060528322" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="778451934697695" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="842145086125869" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="472412050107184" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="300472550601638" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="830075613516134" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="236141284632066" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="266786720563325" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block sid="667305248331023">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="834493231460108" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="107585711420429" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="301799465461939" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="857030809029452" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="800976476593830" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="859911176039441" type="IdiomaDialogo">
+                            <param id="0" name="Text">left(&quot;GRACIAS&quot;,len(IdiomaDialogo.text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="982462855855793">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="671284409555445" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="275133786582618" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="399577883871626" type="System">
+                            <param id="0" name="First value">IdiomaDialogo.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;GRACIAS&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="339930584878460" type="DialoguePointHombreSediento">
+                            <param id="0" name="Instance variable">FirstConv</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="299710504948393" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="505577614913752" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="168153695459243" type="System">
+                            <param id="0" name="Variable">Dialogo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="237517449986446" type="IdiomaDialogo">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="934196991138503" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="633027495989991" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="461178924779702" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="784628413198260" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="786725420140732" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="316794228288233">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="230072600750823" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="512841566695495" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="142104413712689" type="HombreSediento">
+                            <param id="0" name="Instance variable">Movimiento</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Set speed" sid="317480103383324" type="HombreSediento">
+                            <param id="0" name="Speed">5</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="173522331380446" type="HombreSediento">
+                            <param id="0" name="X">HombreSediento.X + 3</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="489007729913735" type="BlockHombreSediento">
+                            <param id="0" name="X">BlockHombreSediento.X + 3</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="466231923379027" type="DialoguePointHombreSediento">
+                            <param id="0" name="X">DialoguePointHombreSediento.X + 3</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="131348361442358" type="HombreSediento">
+                            <param id="0" name="Instance variable">Movimiento</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="448560097301605" title="Interacciones extra">
+            <sub-events>
+                <event-block sid="284451138397607">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="144727177962934" type="BlockAgua">
+                            <param id="0" name="Object">Princesa</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="890486650515613" type="BlockAgua">
+                            <param id="0" name="Instance variable">ColisionAgua</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="951298991736484">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="527290213344772" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="990865021947756" type="BlockAgua">
+                            <param id="0" name="Instance variable">ColisionAgua</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="232981454812314" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="729046224062890" type="Princesa">
+                            <param id="0" name="Object">DialoguePointHombreSediento</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="953297560523885" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="785539637294934" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="956183209096487" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="767011262867736" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="595411026874935" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block sid="828040211872322">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="475411676634607" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="158820215035878" type="BlockAgua">
+                            <param id="0" name="Instance variable">ColisionAgua</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="887244519192266" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="489021787752939" type="Princesa">
+                            <param id="0" name="Object">DialoguePointHombreSediento</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="276876062798259" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="771320087894615" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set font size" sid="293625446378311" type="Destino">
+                            <param id="0" name="Size (pt)">8</param>
+                        </action>
+                        <action id="0" name="Set text" sid="718381524306190" type="Destino">
+                            <param id="0" name="Text">left(&quot;Has llenado con agua la botella&quot;,len(Destino.Text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="624119379166514">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="637648942409584" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="688298859085139" type="System">
+                            <param id="0" name="First value">&quot;Has llenado con agua la botella&quot; </param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Destino.Text </param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="940361898378745" type="Princesa">
+                            <param id="0" name="Instance variable">Botella</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="909021905490127" type="BlockAgua">
+                            <param id="0" name="Instance variable">ColisionAgua</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="641791389724978" type="Princesa">
+                            <param id="0" name="Object">DialoguePointHombreSediento</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="159920935151738" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="223374979032095" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="474839181416114" type="Destino">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="764100774478090" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="505695249147757" type="BlockAgua">
+                            <param id="0" name="Instance variable">ColisionAgua</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="939707828976804" type="Princesa">
+                            <param id="0" name="Instance variable">BotellaLlena</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="127380431694932" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="720085802486001" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="565578215634984">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="583059040735258" type="BlockCartel">
+                            <param id="0" name="Object">Princesa</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="918487398278167" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="858812779218884">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="121644676067246" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="915752498546682" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="462220651998641" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="350339137469230" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="294236142498896" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="863279027316341" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="854275334733378" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="850105505867826" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="889106306787599">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="574200066609594" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="748254283378009" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="247155561136233" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="898857091359619" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set font size" sid="248184160895982" type="Destino">
+                            <param id="0" name="Size (pt)">8</param>
+                        </action>
+                        <action id="0" name="Set text" sid="256680057416384" type="Destino">
+                            <param id="0" name="Text">left(&quot;Cartel: &quot;,len(Destino.Text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="406470955181473">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="333914279665743" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="330357865941980" type="System">
+                            <param id="0" name="First value">Destino.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Cartel: &quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="582031666919862" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="871053311139139" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="441761883563073" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="115907959339376" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="398879288987340" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="216029715500466" type="Destino">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="450146137396217" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="923477824876055">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="897369616869395" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="582204668244879" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="360550921177498" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="237005051950799" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition disabled="1" id="-8" name="Compare two values" sid="458688190778456" type="System">
+                            <param id="0" name="First value">Destino.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Cartel: &quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="664148821972965" type="IdiomaDialogo">
+                            <param id="0" name="Text">left(&quot;AGUA&quot;,len(IdiomaDialogo.text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943808919947069">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="853582784176105" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="237177923754803" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="406330765625178" type="System">
+                            <param id="0" name="First value">IdiomaDialogo.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;AGUA&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="621689467729449" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="312161920937810" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="686623192320610" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="153545392984480" type="IdiomaDialogo">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action disabled="1" id="0" name="Set text" sid="844700962138726" type="Destino">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action disabled="1" id="-16" name="Set opacity" sid="123142955743888" type="Destino">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="131212586562465" type="IdiomaDialogo">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="711483298049906" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="895632973747293" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="875897931689698" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="110400107843113" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="148725306981099">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="160681004071687" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="601908631526502" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="815476133266017" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="431830382050368" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="814797524603284" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="432244292243190" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="175413272849420" type="Princesa" />
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="326290155078721">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="347922111929917" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="882559362288931" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="478981167117043" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="505099207251052" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set font size" sid="169536424610723" type="Destino">
+                            <param id="0" name="Size (pt)">8</param>
+                        </action>
+                        <action id="0" name="Set text" sid="295418905407053" type="Destino">
+                            <param id="0" name="Text">left(&quot;Creo que entiendo esto ahora&quot;,len(Destino.Text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="812359285017926">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="125148753611554" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="766017030264578" type="System">
+                            <param id="0" name="First value">&quot;Creo que entiendo esto ahora&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Destino.Text </param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="172984925452299" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="337175703106941" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="844242079104113" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="359922918965869" type="Destino">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="692679702642184" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="800415315989991" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="338499174998717">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="146124534100316" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="232196030677055" type="System">
+                            <param id="0" name="Interval (seconds)">0.085</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="709858588906489" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="977082413394926" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-15" name="Set visible" sid="967254085524159" type="DialogBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="977572183951328" type="Destino">
+                            <param id="0" name="Size (pt)">8</param>
+                        </action>
+                        <action id="0" name="Set text" sid="163078885849589" type="Destino">
+                            <param id="0" name="Text">left(&quot;Cartel: &apos;AGUA&apos;&quot;,len(Destino.Text) + 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="418717683035435">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="123144838889855" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="589541570286261" type="System">
+                            <param id="0" name="First value">&quot;Cartel: &apos;AGUA&apos;&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Destino.Text </param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="267838933316841" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="863709108792470" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="420731757425000" type="HombreSediento">
+                            <param id="0" name="Instance variable">QuestDone</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="402611186735872" type="System">
+                            <param id="0" name="Variable">Message</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="288879726671034" type="Destino">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="425045178574243" type="DialogBox">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="245984303499971" type="BlockCartel">
+                            <param id="0" name="Instance variable">ColisionCartel</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="887428577054276" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="897672397302783" type="System">
+                            <param id="0" name="Group name">&quot;Player Control&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="598688098481668" title="SaveState">
+            <sub-events>
+                <event-block sid="892122721243206">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="135000862431742" type="SavePoint">
+                            <param id="0" name="Object">Princesa</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="825957626321181" type="SavePoint">
+                            <param id="0" name="Instance variable">Colision</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="732705340508944">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="103835214251473" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="556560130713892" type="SavePoint">
+                            <param id="0" name="Instance variable">Colision</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="719493353047867" type="Audio">
+                            <param id="0" name="Audio file">Sound Effect (2)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-36" name="Save" sid="236917139783665" type="System">
+                            <param id="0" name="Slot">&quot;Save 1&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="994264098561045" type="SavePoint">
+                            <param id="0" name="Instance variable">Colision</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

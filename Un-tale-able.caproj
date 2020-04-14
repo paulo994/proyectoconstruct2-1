@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Un-tale-able</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>16cwugn7h8l46</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>208</width>
+        <height>208</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Firefox</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="ArenaFondo" sid="923058066883607">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="772560032365080">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\Tile2.png" />
+        </object-type>
+        <object-type name="Princesa" sid="259404212368200">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Botella" sid="846725858593553" type="number" />
+                <instance-variable name="BotellaLlena" sid="824815125222104" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="577225428839225">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="189448389502743" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="657716813924611" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-down1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-down2.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="731937999367521" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-up1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-up2.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="906500017130906" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-left1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-left2.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="980570983757180" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-right1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\zelda-right2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="269134513362832">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Audio" sid="586750437473711">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="ColisionLeftRight" sid="736496567489198">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321556609290377" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\Collision.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ArbolManzana" sid="750334526221716">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753823533195423" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\Arbol - manzana.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HombreSediento" sid="465658517561745">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="QuestDone" sid="942859463423351" type="number" />
+                <instance-variable name="Movimiento" sid="601148735565312" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977706957258916" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\NPC1.png">
+                        <collision-poly>
+                            <point x="0.133333" y="0.125" />
+                            <point x="0.466667" y="0" />
+                            <point x="0.8" y="0.1875" />
+                            <point x="0.866667" y="0.5" />
+                            <point x="0.933333" y="0.9375" />
+                            <point x="0.466667" y="1" />
+                            <point x="0.0666667" y="0.9375" />
+                            <point x="0.0666667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\NPC2.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.1875" />
+                            <point x="0.466667" y="0" />
+                            <point x="0.866667" y="0.125" />
+                            <point x="0.933333" y="0.5" />
+                            <point x="0.933333" y="0.9375" />
+                            <point x="0.466667" y="1" />
+                            <point x="0.0666667" y="0.9375" />
+                            <point x="0.133333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ColisionRightLeft" sid="104891156557674">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765033990762982" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\Collision.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DialoguePointHombreSediento" sid="405279754546791">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="FirstConv" sid="861710339899236" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752391407230979" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlockHombreSediento" sid="270639764689299">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="611563515040562">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534038507012625" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DialogBox" sid="712037550909143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562764142118259" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Origen" sid="655566084725356">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Destino" sid="141915329011917">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="IdiomaDialogo" sid="334814934296847">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\minecraft-enchantment-font-character-map.png" />
+        </object-type>
+        <object-type name="BlockArbol" sid="472216628378333">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="312404967418438">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="933688674892051" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SavePoint" sid="360808237656468">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Colision" sid="301290715110745" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="974251586295916">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696948216810548" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextoTitulo" sid="641594718384100">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\minecraft-enchantment-font-character-map.png" />
+        </object-type>
+        <object-type name="NuevaPartida" sid="378686188839516">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CargarPartida" sid="543977243490005">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Contorno" sid="193527069153934">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="413028203547840" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\contorno.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap16x16" sid="456580029547502">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\tumblr_pym3d3h2r31ryhg8fo1_1280.png" />
+            <tiles>
+                <tile id="191">
+                    <collision-poly>
+                        <point x="0.0625" y="0.0625" />
+                        <point x="0.9375" y="0.0625" />
+                        <point x="1" y="0.9375" />
+                        <point x="0.0625" y="0.9375" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="PantallaGuardado" sid="679858336023894">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734855877441331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\The-Legend-of-Zelda-Oracle-of-Ages-save-screen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FlechaMenu" sid="922012064663742">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282662394906957" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\flecha.png">
+                        <collision-poly>
+                            <point x="0.7" y="0.218182" />
+                            <point x="1" y="0.490909" />
+                            <point x="0.7" y="0.781818" />
+                            <point x="0.5" y="0.927273" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.0727273" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CorazonVida" sid="276301319658870">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="446191203717552" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.533333" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\Heart-Piece.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.133333" />
+                            <point x="0.875" y="0.133333" />
+                            <point x="1" y="0.466667" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="0.466667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Posicion" sid="203344703134488">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BlockAgua" sid="612106924580197">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ColisionAgua" sid="564728091310087" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="923557153138193">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="899868811386083" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PantallaDeCarga" sid="460807998955535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732119507584731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlockCuadrado" sid="793740848065670">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="529152715405125">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136852843091907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cartel" sid="267569466313839">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249487062611047" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\PJimenez\Desktop\Proyecto Construct 2\cartel.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlockCartel" sid="412587401998235">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ColisionCartel" sid="484821488371838" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="242156708688635">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929774594042935" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Layout 1.xml</layout>
+        <layout>SaveScreen.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Global.xml</event-sheet>
+        <event-sheet>Menu(Eventos).xml</event-sheet>
+        <event-sheet>SaveScreen(Eventos).xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Audio" uid="3">
+            <properties>
+                <timescale-audio>On (sounds and music)</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>Yes</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Sound Effect (2).m4a" />
+        <file name="Sound Effect (2).ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="The Legend of Zelda ~ Oracle of Seasons Music   Skull Pirate.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="minecraft-enchantment.ttf" />
+    </files-folder>
+</c2project>
